@@ -1,0 +1,53 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "fold7-power-lab/message-envelope.schema.json",
+  "title": "Fold7 Power Lab Message Envelope",
+  "type": "object",
+  "required": ["protocol_version","message_id","sender","destination","message_type","created_at","payload"],
+  "properties": {
+    "protocol_version": {"type":"string","const":"1.0.0-alpha.1"},
+    "message_id": {"type":"string","minLength":16},
+    "correlation_id": {"type":["string","null"]},
+    "causation_id": {"type":["string","null"]},
+    "idempotency_key": {"type":["string","null"]},
+    "sender": {
+      "type":"object",
+      "required":["project_id","agent_id","agent_instance_id","role"],
+      "properties": {
+        "project_id":{"const":"fold7-power-lab"},
+        "agent_id":{"type":"string"},
+        "agent_instance_id":{"type":"string"},
+        "role":{"type":"string"}
+      },
+      "additionalProperties": true
+    },
+    "destination": {
+      "type":"object",
+      "required":["project_id","channel"],
+      "properties": {
+        "project_id":{"const":"fold7-power-lab"},
+        "agent_id":{"type":["string","null"]},
+        "channel":{"type":"string"}
+      },
+      "additionalProperties": true
+    },
+    "task": {
+      "type":["object","null"],
+      "properties": {
+        "project_id":{"const":"fold7-power-lab"},
+        "task_id":{"type":"string"},
+        "parent_task_id":{"type":["string","null"]}
+      }
+    },
+    "message_type":{"type":"string"},
+    "sequence":{"type":["integer","null"],"minimum":0},
+    "created_at":{"type":"string"},
+    "expires_at":{"type":["string","null"]},
+    "priority":{"type":["string","null"]},
+    "capabilities_required":{"type":"array","items":{"type":"string"}},
+    "artifact_refs":{"type":"array","items":{"type":"object"}},
+    "payload":{},
+    "integrity":{"type":["object","null"]}
+  },
+  "additionalProperties": true
+}

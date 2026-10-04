@@ -1,0 +1,17 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"fold7-power-lab/artifact.schema.json",
+  "type":"object",
+  "required":["artifact_id","project_id","creator_agent_id","artifact_type","created_at","version","provenance"],
+  "properties": {
+    "artifact_id":{"type":"string","minLength":8},
+    "project_id":{"const":"fold7-power-lab"},
+    "creator_agent_id":{"type":"string"},
+    "task_id":{"type":["string","null"]},
+    "artifact_type":{"type":"string"},
+    "created_at":{"type":"string"},
+    "version":{"type":"string"},
+    "provenance":{"type":"object"}
+  },
+  "additionalProperties": true
+}

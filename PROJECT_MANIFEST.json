@@ -1,8 +1,12 @@
 {
-  "schema": "fold7-power-lab/project-manifest/v1",
+  "schema": "fold7-power-lab/project-manifest/v2",
   "project_id": "fold7-power-lab",
   "project_name": "Galaxy Z Fold7 Power Lab",
+  "project_version": "0.1.0-alpha.2",
+  "protocol_version": "1.0.0-alpha.1",
+  "package_version": "0.1.0-alpha.2",
   "repository_identity": "boberino93-bit/samsungpowerbootstrap",
+  "repository_id": 1404088763,
   "canonical_branch": "main",
   "project_type": "RESEARCH_AND_DEVICE_ENGINEERING",
   "target_device": "Samsung Galaxy Z Fold7",
@@ -13,11 +17,15 @@
   "artifact_namespace": "/Fold7-PowerLab-AgentBus/artifacts",
   "message_namespace": "/Fold7-PowerLab-AgentBus/messages",
   "task_namespace": "/Fold7-PowerLab-AgentBus/tasks",
+  "lock_namespace": "/Fold7-PowerLab-AgentBus/locks",
+  "lease_namespace": "/Fold7-PowerLab-AgentBus/leases",
+  "package_namespace": "/Fold7-PowerLab-AgentBus/packages",
   "primary_role": "PRIMARY",
   "primary_state": "ACTIVE_BOOTSTRAP",
   "swarm_state": "NOT_AUTHORIZED",
   "cross_project_default": "DENY",
   "device_mutation_gate": ".interagent/recovery/DEVICE_RECOVERY_CONTRACT.json",
-  "status": "INITIAL_POPULATION_COMPLETE_RECOVERY_GATE_UNVALIDATED",
-  "updated_at_utc": "2026-10-04T07:45:00Z"
+  "created_at": "2026-10-04T07:45:37Z",
+  "status": "SCOPE_HARDENED_PACKAGE_BUILD_PENDING",
+  "updated_at_utc": "2026-10-04T08:05:00Z"
 }

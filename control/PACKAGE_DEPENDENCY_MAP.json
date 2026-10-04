@@ -1,0 +1,26 @@
+{
+  "schema":"fold7-power-lab/package-dependency-map/v1",
+  "common":[
+    "PROJECT_IDENTITY_LOCK.json",
+    "AGENT_BOOTSTRAP.json",
+    "AGENT_BOOTSTRAP.md",
+    "BOOTSTRAP_ORDER.json",
+    "PROJECT_MANIFEST.json",
+    "VERSION.json",
+    "control/PROJECT_SCOPE_GATE.py",
+    "control/MESSAGE_VALIDATOR.py",
+    "control/CAPABILITIES.json",
+    "protocol/README.md",
+    "protocol/message-envelope.schema.json",
+    "protocol/task.schema.json",
+    "protocol/artifact.schema.json",
+    ".interagent/recovery/DEVICE_RECOVERY_CONTRACT.json",
+    ".interagent/recovery/RECOVERY.md",
+    "docs/SAFETY_MODEL.md"
+  ],
+  "roles": {
+    "PRIMARY":".interagent/roles/PRIMARY.md",
+    "MANAGER":".interagent/roles/MANAGER.md",
+    "RESEARCH":".interagent/roles/RESEARCH.md"
+  }
+}

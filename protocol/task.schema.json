@@ -1,0 +1,20 @@
+{
+  "$schema":"https://json-schema.org/draft/2020-12/schema",
+  "$id":"fold7-power-lab/task.schema.json",
+  "type":"object",
+  "required":["project_id","task_id","owner_agent_id","creator_agent_id","status","created_at","updated_at"],
+  "properties": {
+    "project_id":{"const":"fold7-power-lab"},
+    "task_id":{"type":"string","minLength":8},
+    "owner_agent_id":{"type":"string"},
+    "creator_agent_id":{"type":"string"},
+    "parent_task_id":{"type":["string","null"]},
+    "status":{"type":"string"},
+    "created_at":{"type":"string"},
+    "updated_at":{"type":"string"},
+    "expected_version":{"type":["integer","null"],"minimum":0},
+    "current_version":{"type":"integer","minimum":0},
+    "lease":{"type":["object","null"]}
+  },
+  "additionalProperties": true
+}

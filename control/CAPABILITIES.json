@@ -1,0 +1,12 @@
+{
+  "schema":"fold7-power-lab/capabilities/v1",
+  "project_id":"fold7-power-lab",
+  "roles": {
+    "PRIMARY":["read_source","write_source","read_artifacts","write_artifacts","publish_message","claim_task","review_change","approve_change","build_package","replace_package"],
+    "MANAGER":["read_source","read_artifacts","write_artifacts","publish_message","claim_task","review_change"],
+    "RESEARCH":["read_source","read_artifacts","write_artifacts","publish_message","claim_task"]
+  },
+  "cross_project_exchange":"DENY_BY_DEFAULT",
+  "external_action":"HUMAN_OR_EXPLICIT_PRIMARY_GATE",
+  "device_mutation":"PRIMARY_PLUS_VALIDATED_RECOVERY_GATE"
+}

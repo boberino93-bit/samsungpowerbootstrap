@@ -1,0 +1,11 @@
+{
+  "schema":"fold7-power-lab/package-registry/v1",
+  "project_id":"fold7-power-lab",
+  "release_set":"0.1.0-alpha.2",
+  "protocol_version":"1.0.0-alpha.1",
+  "packages": {
+    "PRIMARY":{"filename":"fold7-power-lab-primary-agent-0.1.0-alpha.2.zip","status":"PENDING_BUILD"},
+    "MANAGER":{"filename":"fold7-power-lab-manager-agent-0.1.0-alpha.2.zip","status":"PENDING_BUILD"},
+    "RESEARCH":{"filename":"fold7-power-lab-research-agent-0.1.0-alpha.2.zip","status":"PENDING_BUILD"}
+  }
+}
