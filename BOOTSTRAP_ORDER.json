@@ -1,0 +1,17 @@
+{
+  "schema": "fold7-power-lab/bootstrap-order/v1",
+  "project_id": "fold7-power-lab",
+  "mode": "FAIL_CLOSED",
+  "steps": [
+    {"order": 1, "id": "project_scope_selection", "action": "Resolve current human project intent. Ambiguous intent means ASK_HUMAN_WRITE_NOWHERE."},
+    {"order": 2, "id": "identity_lock_validation", "action": "Validate PROJECT_IDENTITY_LOCK.json and every proposed writable destination."},
+    {"order": 3, "id": "recovery_contract_load", "action": "Load DEVICE_RECOVERY_CONTRACT.json. Device mutation is not actionable if the required recovery tier is unvalidated."},
+    {"order": 4, "id": "project_manifest_load", "action": "Load only this project's manifest as authority and verify repository/coordination binding."},
+    {"order": 5, "id": "role_contract_load", "action": "Load role-specific authority. Research and Manager roles have no production-write authority by default."},
+    {"order": 6, "id": "local_state_load", "action": "Load project-local state, accepted findings, evidence, and active experiment status."},
+    {"order": 7, "id": "task_activation", "action": "Only now may tasks, handoffs, research queues, or implementation work become actionable."}
+  ],
+  "foreign_state_before_step_2": "READ_ONLY_NON_AUTHORITATIVE",
+  "task_or_handoff_before_step_2": "NOT_ACTIONABLE",
+  "risky_device_mutation_without_validated_recovery": "PROHIBITED"
+}

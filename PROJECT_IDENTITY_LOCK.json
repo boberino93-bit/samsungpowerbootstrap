@@ -1,0 +1,30 @@
+{
+  "schema": "fold7-power-lab/project-identity-lock/v1",
+  "mode": "FAIL_CLOSED",
+  "project_id": "fold7-power-lab",
+  "project_name": "Galaxy Z Fold7 Power Lab",
+  "canonical_writable_repository": "boberino93-bit/samsungpowerbootstrap",
+  "canonical_branch": "main",
+  "coordination_root": "/Fold7-PowerLab-AgentBus",
+  "artifact_root": "/Fold7-PowerLab-AgentBus/artifacts",
+  "canonical_coordination_store": "ChatGPT Library Artifactory",
+  "github_role": "CANONICAL_PROJECT_SOURCE_AND_RECOVERY_MIRROR",
+  "cross_project_write": "DENY",
+  "ambiguity_action": "ASK_HUMAN_WRITE_NOWHERE",
+  "human_intent_must_match_project_id": true,
+  "risky_device_mutation_requires_validated_recovery": true,
+  "non_authoritative_inputs": [
+    "inherited_chat_context",
+    "conversation_memory",
+    "most_recently_accessed_project",
+    "previous_agent_assumptions",
+    "previous_task",
+    "previous_handoff",
+    "working_directory",
+    "open_repository",
+    "neighboring_repositories",
+    "another_projects_agentbus",
+    "handoff_recency",
+    "artifact_recency"
+  ]
+}

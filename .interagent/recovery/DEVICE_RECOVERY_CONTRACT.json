@@ -1,0 +1,31 @@
+{
+  "schema": "fold7-power-lab/device-recovery-contract/v1",
+  "project_id": "fold7-power-lab",
+  "priority": "P0",
+  "readiness": "UNVALIDATED",
+  "blocks": {
+    "risky_persistent_device_mutation": true,
+    "boot_or_systemui_mutation": true,
+    "changes_without_external_host_recovery": true
+  },
+  "safety_invariant": "No experiment may remove the user's ordinary recovery surface unless an independent recovery path for that exact failure class has already been validated.",
+  "required_before_risky_field_test": [
+    "known_good_rollback_artifact_and_hash",
+    "pre_change_configuration_snapshot",
+    "external_host_rescue_copy",
+    "verified_usb_data_path_and_cable",
+    "preauthorized_debug_or_equivalent_rescue_channel_when_applicable",
+    "documented_mutation_specific_revert_commands_or_restore_steps",
+    "explicit_abort_criteria",
+    "post_recovery_health_check"
+  ],
+  "recovery_tiers": [
+    {"tier": 0, "name": "APP_PROCESS_OR_PACKAGE", "goal": "Revert an app/user-space change without rebooting the device."},
+    {"tier": 1, "name": "ANDROID_BOOTED_ADB_REACHABLE", "goal": "Recover when UI/display/launcher/input behavior is degraded but Android and the external debug channel remain reachable."},
+    {"tier": 2, "name": "ANDROID_BOOTED_UI_UNUSABLE", "goal": "Use host-side recovery to disable/revert the exact changed component and reboot into a known-good state."},
+    {"tier": 3, "name": "NORMAL_ANDROID_BOOT_UNAVAILABLE", "goal": "Use Samsung-supported recovery/download mechanisms and a separately documented host-side restore plan."}
+  ],
+  "factory_reset_as_primary_plan": "PROHIBITED",
+  "phone_only_recovery_plan": "PROHIBITED",
+  "promotion_rule": "A mutation class can move from BLOCKED to ALLOWED_FOR_BOUNDED_TEST only after its recovery drill passes and evidence is recorded."
+}

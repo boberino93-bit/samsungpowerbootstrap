@@ -1,0 +1,23 @@
+{
+  "schema": "fold7-power-lab/project-manifest/v1",
+  "project_id": "fold7-power-lab",
+  "project_name": "Galaxy Z Fold7 Power Lab",
+  "repository_identity": "boberino93-bit/samsungpowerbootstrap",
+  "canonical_branch": "main",
+  "project_type": "RESEARCH_AND_DEVICE_ENGINEERING",
+  "target_device": "Samsung Galaxy Z Fold7",
+  "target_platform": "Android 16 / Samsung One UI",
+  "target_geometry": {"inner": "1968x2184", "cover": "1080x2520"},
+  "project_root": "/Fold7-PowerLab-AgentBus",
+  "agent_namespace": "/Fold7-PowerLab-AgentBus/agents",
+  "artifact_namespace": "/Fold7-PowerLab-AgentBus/artifacts",
+  "message_namespace": "/Fold7-PowerLab-AgentBus/messages",
+  "task_namespace": "/Fold7-PowerLab-AgentBus/tasks",
+  "primary_role": "PRIMARY",
+  "primary_state": "ACTIVE_BOOTSTRAP",
+  "swarm_state": "NOT_AUTHORIZED",
+  "cross_project_default": "DENY",
+  "device_mutation_gate": ".interagent/recovery/DEVICE_RECOVERY_CONTRACT.json",
+  "status": "INITIAL_POPULATION_COMPLETE_RECOVERY_GATE_UNVALIDATED",
+  "updated_at_utc": "2026-10-04T07:45:00Z"
+}

@@ -1,0 +1,20 @@
+{
+  "schema": "fold7-power-lab/initial-assessment/v1",
+  "project_id": "fold7-power-lab",
+  "status": "READY_FOR_PRIMARY_REVIEW_NOT_SWARM_AUTHORIZED",
+  "primary_problem": "Determine the earliest safe and reliable Samsung Fold7 display-power/bootstrap path while preserving deterministic rollback if an experiment disrupts normal phone operation.",
+  "known_constraints": [
+    "Target is Samsung Galaxy Z Fold7 on Android 16 / Samsung One UI.",
+    "Inner geometry is 1968x2184; cover geometry is 1080x2520.",
+    "Logical Android display IDs are not durable physical-panel identity across topology transitions.",
+    "Device-critical mutation is blocked until recovery for that mutation class is validated.",
+    "Cross-project writes are denied by default."
+  ],
+  "p0_questions": [
+    "What rescue channels remain available for each realistic failure class?",
+    "How should a host-side rescue kit be generated and validated before risky tests?",
+    "What exact sequence exists from physical opening evidence through panel power, Samsung topology publication, composition, and first useful frame?",
+    "Which parts can be observed or influenced reversibly before any persistent mutation is considered?"
+  ],
+  "current_recovery_state": "UNVALIDATED"
+}

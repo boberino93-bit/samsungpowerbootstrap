@@ -1,0 +1,22 @@
+{
+  "schema": "fold7-power-lab/proposed-allocation/v1",
+  "project_id": "fold7-power-lab",
+  "authorization_state": "PROPOSED_ONLY",
+  "note": "No lane is active until the Primary explicitly authorizes and binds an exact agent/session.",
+  "research_lanes": [
+    {"lane": "R01", "subject": "Device rescue channel inventory and recovery drill design", "priority": "P0"},
+    {"lane": "R02", "subject": "Host-side rescue kit manifest, rollback artifact and hash contract", "priority": "P0"},
+    {"lane": "R03", "subject": "Fold7 physical panel identity and topology lifecycle", "priority": "P0"},
+    {"lane": "R04", "subject": "Samsung display power/bootstrap sequence and observable milestones", "priority": "P0"},
+    {"lane": "R05", "subject": "ADB/Shizuku/privileged-service survivability by failure class", "priority": "P0"},
+    {"lane": "R06", "subject": "SystemUI/launcher/input failure containment and reversible experiment patterns", "priority": "P1"},
+    {"lane": "R07", "subject": "Watchdog, timeout and automatic rollback architecture", "priority": "P1"},
+    {"lane": "R08", "subject": "Samsung Recovery/Download-mode host restore boundary and prerequisites", "priority": "P1"},
+    {"lane": "R09", "subject": "Power/topology diagnostics and evidence schema", "priority": "P1"},
+    {"lane": "R10", "subject": "Independent adversarial safety review and failure injection plan", "priority": "P1"}
+  ],
+  "manager_lanes": [
+    {"lane": "M01", "subject": "Evidence synthesis and overlap control"},
+    {"lane": "M02", "subject": "Adversarial recovery/safety gate review before Primary promotion"}
+  ]
+}

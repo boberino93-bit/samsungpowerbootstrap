@@ -1,0 +1,21 @@
+# Local secrets / credentials
+*.keystore
+*.jks
+*.p12
+.env
+.env.*
+secrets/
+
+# Local captures and large transient artifacts
+captures/
+build/
+out/
+*.apk
+*.aab
+*.zip
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

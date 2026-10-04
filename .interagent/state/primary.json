@@ -1,0 +1,12 @@
+{
+  "schema": "fold7-power-lab/primary-state/v1",
+  "project_id": "fold7-power-lab",
+  "instance_id": "primary-bootstrap-20261004",
+  "state": "ACTIVE_BOOTSTRAP",
+  "repository": "boberino93-bit/samsungpowerbootstrap",
+  "research_swarm": "NOT_AUTHORIZED",
+  "manager_swarm": "NOT_AUTHORIZED",
+  "device_recovery_readiness": "UNVALIDATED",
+  "risky_device_mutation": "BLOCKED",
+  "current_priority": "P0_DEVICE_RECOVERY_AND_SAFE_EXPERIMENT_FOUNDATION"
+}

@@ -1,0 +1,19 @@
+{
+  "schema": "fold7-power-lab/initialization/v1",
+  "project_id": "fold7-power-lab",
+  "repository": "boberino93-bit/samsungpowerbootstrap",
+  "branch": "main",
+  "repository_binding_status": "BOUND",
+  "repository_binding_seed_commit": "d44f0e0f4b9b440d3a5e80200081b3d1c16c69bd",
+  "primary": {
+    "instance_id": "primary-bootstrap-20261004",
+    "state": "ACTIVE_BOOTSTRAP",
+    "repo_write_authority": "PRIMARY_ONLY",
+    "device_mutation_authority": "BLOCKED_BY_RECOVERY_GATE"
+  },
+  "manager_agents_authorized": false,
+  "research_agents_authorized": false,
+  "new_agent_sessions_require_primary_allocation": true,
+  "human_launch_only": true,
+  "current_head_must_be_refetched_before_each_work_unit": true
+}
