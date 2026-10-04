@@ -1,11 +1,45 @@
 {
-  "schema":"fold7-power-lab/package-registry/v1",
-  "project_id":"fold7-power-lab",
-  "release_set":"0.1.0-alpha.2",
-  "protocol_version":"1.0.0-alpha.1",
+  "schema": "fold7-power-lab/package-registry/v2",
+  "project_id": "fold7-power-lab",
+  "project_version": "0.1.0-alpha.2",
+  "protocol_version": "1.0.0-alpha.1",
+  "package_version": "0.1.0-alpha.2",
+  "release_set": "0.1.0-alpha.2",
+  "source_revision": "aeaf6721c18d962892aa02607d0c00786928af5c",
+  "source_tests": {"result": "PASS", "passed": 10, "failed": 0},
+  "package_validation": "PASS_ALL",
+  "smoke_test_scope": "STATIC_BOOTSTRAP_AND_ARCHIVE_READBACK",
   "packages": {
-    "PRIMARY":{"filename":"fold7-power-lab-primary-agent-0.1.0-alpha.2.zip","status":"PENDING_BUILD"},
-    "MANAGER":{"filename":"fold7-power-lab-manager-agent-0.1.0-alpha.2.zip","status":"PENDING_BUILD"},
-    "RESEARCH":{"filename":"fold7-power-lab-research-agent-0.1.0-alpha.2.zip","status":"PENDING_BUILD"}
-  }
+    "PRIMARY": {
+      "filename": "packages/fold7-power-lab-primary-agent-0.1.0-alpha.2.zip",
+      "status": "PUBLISHED_VALIDATED",
+      "sha256": "35555ccf3ff7c69e8d5c159694dac4f73f6f27f65c34aa4567bb8947fd346cfc",
+      "size_bytes": 13928,
+      "rebuilt": true,
+      "validated": true,
+      "smoke_tested": true
+    },
+    "MANAGER": {
+      "filename": "packages/fold7-power-lab-manager-agent-0.1.0-alpha.2.zip",
+      "status": "PUBLISHED_VALIDATED",
+      "sha256": "0d028ad56d04dc4894d31b261d69284b665f0d2a20c289ba03437d32bf0b5507",
+      "size_bytes": 13791,
+      "rebuilt": true,
+      "validated": true,
+      "smoke_tested": true
+    },
+    "RESEARCH": {
+      "filename": "packages/fold7-power-lab-research-agent-0.1.0-alpha.2.zip",
+      "status": "PUBLISHED_VALIDATED",
+      "sha256": "af2acac12022bca9e8601ef913ca0b56fded50d1a0866a3e8f5b497c11c0c705",
+      "size_bytes": 13802,
+      "rebuilt": true,
+      "validated": true,
+      "smoke_tested": true
+    }
+  },
+  "limitations": [
+    "Smoke testing is static/bootstrap/package-readback validation; packaged roles were not launched as independent persistent agent runtimes in this environment.",
+    "Physical Fold7 device-recovery readiness remains UNVALIDATED and continues to block risky device mutation."
+  ]
 }
