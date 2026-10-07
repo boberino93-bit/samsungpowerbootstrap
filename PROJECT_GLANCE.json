@@ -1,0 +1,12 @@
+{
+  "schema":"org-agent-mesh/project-glance/v1",
+  "project_id":"fold7-power-lab",
+  "repository":"boberino93-bit/samsungpowerbootstrap",
+  "observed_at_utc":"2026-10-07T13:10:00Z",
+  "status":"UNKNOWN",
+  "current_focus":"Galaxy Z Fold7 display-power/bootstrap research: earliest reliable opening, panel-power, topology-publication and usable-presentation path.",
+  "blockers":["RISKY_DEVICE_MUTATION_BLOCKED until the exact mutation class has a tested independent rollback path.","Current live worker state is not yet materialized into PROJECT_GLANCE.json."],
+  "next_action":"Refresh live state from the project AgentBus; continue safe read-only/reversible research unless rollback requirements are satisfied.",
+  "last_material_change":"Internal scheduler binding was added while the repository safety state remained RISKY_DEVICE_MUTATION_BLOCKED.",
+  "evidence_refs":["README.md","docs/DEVICE_RECOVERY_STRATEGY.md","bootstrap/INTERNAL_SCHEDULER_SERVICE.json"]
+}
